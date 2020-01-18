@@ -1,4 +1,4 @@
-package com.hyh.bootlaunch.Model;
+package com.hyh.bootlaunch.model;
 
 import lombok.Data;
 

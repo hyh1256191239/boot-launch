@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ArticleJPARestService implements  ArticleRestService  {
+public class ArticleJPARestService  implements ArticleRestService {
 
     //将JPA仓库对象注入
     @Resource

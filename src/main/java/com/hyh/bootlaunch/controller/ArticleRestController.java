@@ -1,16 +1,11 @@
 package com.hyh.bootlaunch.controller;
 
-import com.hyh.bootlaunch.dao.Article;
 import com.hyh.bootlaunch.model.AjaxResponse;
 import com.hyh.bootlaunch.model.ArticleVO;
 import com.hyh.bootlaunch.service.ArticleRestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Date;
-
-import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @Slf4j
 @RestController
