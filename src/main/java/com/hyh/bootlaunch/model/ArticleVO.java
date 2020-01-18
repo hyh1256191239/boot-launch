@@ -18,7 +18,7 @@ import java.util.List;
 @JsonPropertyOrder(value={"content","title"})
 public class ArticleVO {
 
-   @JsonIgnore
+    @JsonIgnore
     private Long id;
 
 
@@ -30,7 +30,7 @@ public class ArticleVO {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createTime;
 
-    private List<com.hyh.bootlaunch.Model.Reader> reader;
+    private List<Reader> reader;
 
 
 }
