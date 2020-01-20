@@ -1,4 +1,4 @@
-package com.hyh.bootlaunch.config;
+package com.hyh.bootlaunch.Config;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;

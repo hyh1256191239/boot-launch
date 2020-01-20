@@ -1,4 +1,4 @@
-package com.hyh.bootlaunch.config;
+package com.hyh.bootlaunch.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

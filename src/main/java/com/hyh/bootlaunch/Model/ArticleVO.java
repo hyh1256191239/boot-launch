@@ -1,19 +1,20 @@
 package com.hyh.bootlaunch.Model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.hyh.bootlaunch.Model.Reader;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Article {
-
+@Builder
+public class ArticleVO {
     /**
      * id : 1
      * author : zimug
@@ -22,14 +23,13 @@ public class Article {
      * createTime :
      * reader : [{"name":"zimug","age":18},{"name":"kobe","age":37}]
      */
-    @JsonIgnore
-    private int id;
+
+    private Integer id;
     private String author;
     private String title;
     private String content;
-    private String createTime;
+    private Date createTime;
     private List<Reader> reader;
-
 
 
 }

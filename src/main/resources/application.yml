@@ -1,5 +1,21 @@
 #需要使用的配置文件
+server:
+  port: 8888
+
 spring:
-  profiles:
-    active: test
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://localhost/launch?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: hyh113683371
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis:
+#  mapper-locations: classpath:generator/*.xml
+logging:
+  level:
+    com.zimug.bootlaunch: debug
+
 
