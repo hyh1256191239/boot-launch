@@ -4,6 +4,8 @@ import com.hyh.bootlaunch.generator.Article;
 import com.hyh.bootlaunch.generator.ArticleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
 
 public interface ArticleMapper {
     long countByExample(ArticleExample example);

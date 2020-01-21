@@ -7,10 +7,17 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://localhost/launch?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
-    username: root
-    password: hyh113683371
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    primary:
+      jdbc-url: jdbc:mysql://localhost/launch?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: hyh113683371
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    secondary:
+      jdbc-url: jdbc:mysql://localhost/launch2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: hyh113683371
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
 #mybatis:
 #  mapper-locations: classpath:generator/*.xml
